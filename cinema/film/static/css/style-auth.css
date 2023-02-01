@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap');
+
+.accueil{
+    background-image: url('/static/img/pulp-fiction.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    
+}
+
+.formulaire {
+    font-family: 'Roboto Mono', monospace;
+    margin-right: 10em;
+    color: white;
+    font-weight: bold ;
+    font-size: 1.2em;
+}
+
+.my {
+    width: 100%;
+}

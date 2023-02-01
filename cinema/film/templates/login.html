@@ -1,0 +1,25 @@
+{% extends 'base-auth.html' %}
+{% block title %} Connexion {% endblock %}
+{% block formulaire %}
+<h3 class="text-center mb-3">Connexion</h3>
+<a class="text-white" href="{% url 'inscription' %}">Pas encore inscrit ?</a>
+<form action="{% url 'connexion' %}" method="post">
+    {% csrf_token %}
+    <div class="form-group mb-3">
+        <div class="label mb-2">
+            {{ form.username.label }} :
+        </div>
+        {{ form.username }}
+    </div>
+    <div class="form-group mb-3">
+        <div class="label mb-2">
+            {{ form.password.label }} :
+        </div>
+        {{ form.password }}
+    </div>
+
+    <div class="form-group">
+        <input class="my btn btn-dark" type="submit" value="Valider">
+    </div>
+</form>
+{% endblock %}

@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block css %}<link rel="stylesheet" href="{% static 'css/style-auth.css' %}">{% endblock %}
+{% block title %}{% endblock %}
+
+<div class="container-fluid">
+    {% block content %} 
+        <div class="accueil d-flex align-items-center justify-content-end">
+            <div class="formulaire p-3">
+                {% block formulaire%}{%endblock%}
+            </div>
+        </div>
+    </div>
+    {% endblock %}
+</div>
